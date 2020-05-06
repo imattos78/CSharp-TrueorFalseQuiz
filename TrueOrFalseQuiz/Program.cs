@@ -6,6 +6,9 @@ namespace TrueOrFalseQuiz
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to 'True or False Quiz'\nPress 1-Science / 2-General / 3-Films:");
+            string entry = Console.ReadLine();
+
             string[] science = {
         "Question 1 - Electrons are larger than molecules",
         "Question 2 - The Atlantic Ocean is the biggest ocean on Earth.",
