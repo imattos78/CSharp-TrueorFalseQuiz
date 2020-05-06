@@ -94,6 +94,20 @@ namespace TrueOrFalseQuiz
             bool[] filmAnswers = {
         false, false, false, true, true, false, false, true
       };
+            if (entry == "1")
+            {
+                RunQuiz(science, scAnswers);
+            }
+            else if (entry == "2")
+            {
+                RunQuiz(pub, pubAnswers);
+
+            }
+            else if (entry == "3")
+            {
+                RunQuiz(films, filmAnswers);
+            }
+
 
         }
     }
