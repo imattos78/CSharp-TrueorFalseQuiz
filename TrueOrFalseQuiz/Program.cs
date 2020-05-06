@@ -25,6 +25,7 @@ namespace TrueOrFalseQuiz
 
                 while (isBool == false)
                 {
+                    
                     Console.WriteLine("Make sure to respond with 'true or false'.");
                     input = Console.ReadLine();
                     isBool = Boolean.TryParse(input, out inputBool);
@@ -33,7 +34,21 @@ namespace TrueOrFalseQuiz
                 responses[askingIndex] = inputBool;
                 askingIndex++;
             }
+            int scoringIndex = 0;
+            int score = 0;
+            foreach (bool answer in answers)
+            {
+                bool response = responses[scoringIndex];
+                Console.WriteLine($"INPUT: {answer} | ANSWER: {response}");
+                if (response == answer)
+                {
+                    score++;
+                }
+                scoringIndex++;
             }
+            Console.WriteLine($"You got {score} out of {answers.Length} correct!");
+
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to 'True or False Quiz'\nPress 1-Science / 2-General / 3-Films:");
