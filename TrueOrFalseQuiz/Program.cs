@@ -6,6 +6,10 @@ namespace TrueOrFalseQuiz
     {
         static void RunQuiz(string[] questions, bool[] answers)
         {
+            bool[] responses = new bool[questions.Length];
+
+            if (questions.Length != answers.Length)
+                Console.WriteLine("Error in the Length of question / answer arrays!!");
 
         }
         static void Main(string[] args)
