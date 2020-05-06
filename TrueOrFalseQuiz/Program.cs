@@ -11,7 +11,18 @@ namespace TrueOrFalseQuiz
             if (questions.Length != answers.Length)
                 Console.WriteLine("Error in the Length of question / answer arrays!!");
 
-        }
+            int askingIndex = 0;
+
+            foreach (string question in questions)
+            {
+                string input;
+                bool isBool;
+                bool inputBool;
+                Console.WriteLine(question);
+                Console.WriteLine("True or False?");
+                input = Console.ReadLine();
+               
+            }
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to 'True or False Quiz'\nPress 1-Science / 2-General / 3-Films:");
