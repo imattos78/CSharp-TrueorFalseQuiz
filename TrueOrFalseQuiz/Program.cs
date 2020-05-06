@@ -21,7 +21,7 @@ namespace TrueOrFalseQuiz
                 Console.WriteLine(question);
                 Console.WriteLine("True or False?");
                 input = Console.ReadLine();
-               
+                isBool = Boolean.TryParse(input, out inputBool);
             }
         static void Main(string[] args)
         {
