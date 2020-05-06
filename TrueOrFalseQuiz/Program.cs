@@ -4,6 +4,10 @@ namespace TrueOrFalseQuiz
 {
     class Program
     {
+        static void RunQuiz(string[] questions, bool[] answers)
+        {
+
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to 'True or False Quiz'\nPress 1-Science / 2-General / 3-Films:");
@@ -49,6 +53,7 @@ namespace TrueOrFalseQuiz
             bool[] filmAnswers = {
         false, false, false, true, true, false, false, true
       };
+
         }
     }
 }
