@@ -22,6 +22,17 @@ namespace TrueOrFalseQuiz
                 Console.WriteLine("True or False?");
                 input = Console.ReadLine();
                 isBool = Boolean.TryParse(input, out inputBool);
+
+                while (isBool == false)
+                {
+                    Console.WriteLine("Make sure to respond with 'true or false'.");
+                    input = Console.ReadLine();
+                    isBool = Boolean.TryParse(input, out inputBool);
+
+                }
+                responses[askingIndex] = inputBool;
+                askingIndex++;
+            }
             }
         static void Main(string[] args)
         {
